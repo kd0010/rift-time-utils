@@ -34,11 +34,11 @@ export type MonthNum = keyof typeof MonthNames
 export function isMonthName(
   value: any,
 ): value is MonthName {
-  return value in MonthNums
+  return typeof value == 'string' && value in MonthNums
 }
 
 export function isMonthNum(
   value: any,
 ): value is MonthNum {
-  return value in MonthNames
+  return typeof value == 'number' && value in MonthNames
 }
