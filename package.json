@@ -1,6 +1,6 @@
 {
   "name": "rift-time-utils",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,6 +9,11 @@
     "/dist"
   ],
   "scripts": {
-    "clean-build": "rmdir /s /q dist && tsc"
+    "clean-build": "rmdir /s /q dist && tsc",
+    "test": "vitest",
+    "test-once": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^0.27.2"
   }
 }
